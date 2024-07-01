@@ -1,0 +1,49 @@
+// USUARIOS
+
+### 
+POST http://localhost:3333/api/usuarios/admin
+Content-Type: application/json
+
+{
+    "nombre":"Rafa Gamero",
+    "email":"rafa.gamero@gmail.com",
+    "password":"RafaGamero"
+    
+}
+
+### 
+POST http://localhost:3333/api/usuarios/login
+Content-Type: application/json
+
+{
+    "email":"rafa.gamero@gmail.com",
+    "password":"RafaGamero"
+    
+}
+
+
+
+// RESTAURANTES
+
+### 
+POST http://localhost:3333/api/restaurantes
+Content-Type: application/json
+
+{
+    "nombre":"Casa Manolo",
+    "direccion": "Calle Mayor 3"
+}
+
+###
+PUT http://localhost:3333/api/restaurantes/2
+
+Content-Type: application/json
+
+{
+    "nombre":"En ca la abu",
+    "direccion": "Calle Ayun 59"
+}
+
+###
+DELETE http://localhost:3333/api/restaurantes/4
+
