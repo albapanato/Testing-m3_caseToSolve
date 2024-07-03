@@ -1,42 +1,79 @@
-// USUARIOS
 
-### 
-POST http://localhost:3333/api/usuarios/admin
-Content-Type: application/json
-
-{
-    "nombre":"Rafa Gamero",
-    "email":"rafa.gamero@gmail.com",
-    "password":"RafaGamero"
-    
-}
+//USUARIO LOG-IN
 
 ### 
 POST http://localhost:3333/api/usuarios/login
 Content-Type: application/json
 
 {
-    "email":"rafa.gamero@gmail.com",
-    "password":"RafaGamero"
-    
+    "email":"alba.panato@gmail.com",
+    "password":"AlbaPanato"
+   
 }
+
+// Mostrar listado de usuarios
+
+###
+GET http://localhost:3333/api/admin
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyOTU3OCwiY3JlYXRlZEF0IjoxNzIwMDI3Nzc4LCJpYXQiOjE3MjAwMjc3Nzl9.b18QESo3T46E5C5QxSTpTMuTU6GImHVqaLMSKdvnG0Q
+
+
+
+// Crear un nuevo usuario 
+
+### 
+POST http://localhost:3333/api/admin
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyOTU3OCwiY3JlYXRlZEF0IjoxNzIwMDI3Nzc4LCJpYXQiOjE3MjAwMjc3Nzl9.b18QESo3T46E5C5QxSTpTMuTU6GImHVqaLMSKdvnG0Q
+Content-Type: application/json
+
+{
+   "nombre": "Kes Crotolamo",
+    "email": "kes.crotolamo@gmail.com",
+    "password": "KesCrotolamo",
+    "acceso": false
+}
+
+// Modificar un usuario que ya existe
+
+###
+PUT http://localhost:3333/api/admin/3
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyOTU3OCwiY3JlYXRlZEF0IjoxNzIwMDI3Nzc4LCJpYXQiOjE3MjAwMjc3Nzl9.b18QESo3T46E5C5QxSTpTMuTU6GImHVqaLMSKdvnG0Q
+Content-Type: application/json
+
+{
+"nombre": "Alba Panato",
+    "email": "alba.panato@gmail.com",
+"password": "MariaSarmiento",
+"acceso": false
+ 
+}
+
+// Eliminar un usuario
+
+###
+DELETE http://localhost:3333/api/admin/
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyNjUxOCwiY3JlYXRlZEF0IjoxNzIwMDI0NzE4LCJpYXQiOjE3MjAwMjQ3MTh9.A9vshmbDahH5ftH_PJcpFIZKGKikL_KZCu-oPl4B0W4
 
 
 
 // RESTAURANTES
 
+
 ### 
 POST http://localhost:3333/api/restaurantes
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJBY2Nlc3MiOmZhbHNlLCJleHBpcmVkQXQiOjE3MjAwMjU5MzIsImNyZWF0ZWRBdCI6MTcyMDAyNDEzMiwiaWF0IjoxNzIwMDI0MTMyfQ.9eOXqQsAgbvhRZPmeaz5GGh3FiNvgwXw5NE7XgIrw6A
 Content-Type: application/json
 
 {
+    "id_usuario": "3",
     "nombre":"Casa Manolo",
     "direccion": "Calle Mayor 3"
 }
 
+// POR AGREGAR NECESIDAD DEL TOKEN
 ###
 PUT http://localhost:3333/api/restaurantes/2
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyNDc2OCwiY3JlYXRlZEF0IjoxNzIwMDIyOTY4LCJpYXQiOjE3MjAwMjI5Njh9.2JsBtNc4nndPNKPvTft4HLRGD432F6bx7P8xQMCTauw
 Content-Type: application/json
 
 {
@@ -44,6 +81,27 @@ Content-Type: application/json
     "direccion": "Calle Ayun 59"
 }
 
+
+// TABLA RELACION COMENTARIOS POR HACER
+###
+PUT http://localhost:3333/api/restaurantes/2
+Authorization: 
+Content-Type: application/json
+
+{
+   comentario y de mas
+}
+
+// TABLA RELACION COMENTARIOS POR HACER
+POST http://localhost:3333/api/restaurantes/2
+Content-Type: application/json
+
+{
+    comentario y de mas
+}
+
+// POR AGREGAR NECESIDAD DEL TOKEN
 ###
 DELETE http://localhost:3333/api/restaurantes/4
+Authorization: 
 
