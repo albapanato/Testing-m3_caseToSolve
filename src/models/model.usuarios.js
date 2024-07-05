@@ -1,5 +1,5 @@
 // VISUALIZAR LISTADO USUARIOS
-exports.infoUsuarios = () => {
+exports.getAll = () => {
     return new Promise((resolve, reject) => {
         db.query(
             'SELECT * FROM usuarios', (err, rows) => {
@@ -10,11 +10,11 @@ exports.infoUsuarios = () => {
 };
 
 // AGREGAR UN NUEVO USUARIO
-exports.registroUsuario = ({ nombre, email, password, acceso }) => {
+exports.newUser = ({ nombre, email, password }) => {
     return new Promise((resolve, reject) => {
         db.query(
-            'INSERT INTO usuarios (nombre, email, password, acceso) values (?, ?, ?, ?);',
-            [nombre, email, password, acceso],
+            'INSERT INTO usuarios (nombre, email, password) values (?, ?, ?);',
+            [nombre, email, password],
             (err, result) => {
                 if (err) return reject(err);
                 resolve(result);
@@ -24,11 +24,11 @@ exports.registroUsuario = ({ nombre, email, password, acceso }) => {
 };
 
 // MODIFICAR USUARIO
-exports.modificarUsuario = (restauranteId, { nombre, direccion }) => {
+exports.updateUser = (id, { nombre, email, password }) => {
     return new Promise((resolve, reject) => {
         db.query(
-            'UPDATE restaurantes SET nombre = ? , direccion = ? WHERE id = ?',
-            [nombre, direccion, restauranteId],
+            'UPDATE usuarios SET nombre= ?, email= ?, password = ?  WHERE id = ?',
+            [nombre, email, password, id],
             (err, result) => {
                 if (err) return reject(err);
                 resolve(result);
@@ -40,7 +40,7 @@ exports.modificarUsuario = (restauranteId, { nombre, direccion }) => {
 }
 
 //ELIMINAR USUARIO
-exports.eliminarUsuario = (id) => {
+exports.deleteUser = (id) => {
     return new Promise((resolve, reject) => {
         db.query(
             'DELETE FROM usuarios WHERE id = ?',
@@ -55,8 +55,7 @@ exports.eliminarUsuario = (id) => {
 
 }
 
-
-exports.emailUsuario = (email) => {
+exports.getByEmail = (email) => {
     return new Promise((resolve, reject) => {
         db.query(
             'SELECT * FROM usuarios WHERE email = ?',
@@ -69,6 +68,7 @@ exports.emailUsuario = (email) => {
         )
     });
 }
+
 exports.getById = (id) => {
     return new Promise((resolve, reject) => {
         db.query(
@@ -76,7 +76,7 @@ exports.getById = (id) => {
             [id],
             (err, rows) => {
                 if (err) return reject(err);
-                resolve(rows);
+                resolve(rows[0]);
             }
         )
     });
