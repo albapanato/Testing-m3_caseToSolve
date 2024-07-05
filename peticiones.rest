@@ -1,107 +1,146 @@
+// GET /restaurantes (Pública)
+###
+GET http://localhost:3333/api/restaurantes
 
-//USUARIO LOG-IN
 
-### 
+// POST /restaurantes/ (Privada)
+###
+POST http://localhost:3333/api/restaurantes/nuevo
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJ1c2VyQWNjZXNzIjp0cnVlLCJleHBpcmVkQXQiOjE3MjAyMDIzMDIsImNyZWF0ZWRBdCI6MTcyMDE5ODcwMiwiaWF0IjoxNzIwMTk4NzAyfQ.ahXiCW_T4YLKeDENpzu-mnexh5c7kOfc4nfFksk7-hc
+Content-Type: application/json
+
+{
+    "nombre":"La mar de buena",
+    "direccion": "Av Lungomare 134, Valencia ",
+    "tipo_comida": "Marisqueria"
+}
+
+// PUT /restaurantes/id (Privada)
+###
+PUT http://localhost:3333/api/restaurantes
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJ1c2VyQWNjZXNzIjp0cnVlLCJleHBpcmVkQXQiOjE3MjAyMDIzMDIsImNyZWF0ZWRBdCI6MTcyMDE5ODcwMiwiaWF0IjoxNzIwMTk4NzAyfQ.ahXiCW_T4YLKeDENpzu-mnexh5c7kOfc4nfFksk7-hc
+Content-Type: application/json
+
+{
+    
+    "nombre":"La mar de buena",
+    "direccion": "Av Lungomare 234, Valencia ",
+    "tipo_comida": "Marisqueria"
+}
+
+
+
+//DELETE /restaurantes/id; (Protegida)
+###
+DELETE http://localhost:3333/api/restaurantes/1
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJ1c2VyIiwiZXhwaXJlZEF0IjoxNzIwMjA4MzU4LCJjcmVhdGVkQXQiOjE3MjAyMDQ3NTgsImlhdCI6MTcyMDIwNDc1OH0.yILH5PF8v8HoEC9F4IsmTmGMMzcwCi6UCyL_l5qjC5A
+
+// POST /usuarios (Pública)
+###
+POST http://localhost:3333/api/usuarios
+Content-Type: application/json
+
+{
+    
+    "nombre": "Marco Puerta",
+    "email": "marco.puerta@gmail.com",
+    "password": "MarcoPuerta"
+}
+
+
+// POST /usuarios/login (Pública)
+###
 POST http://localhost:3333/api/usuarios/login
 Content-Type: application/json
 
 {
-    "email":"alba.panato@gmail.com",
+   "email":"alba.panato@gmail.com",
     "password":"AlbaPanato"
-   
 }
 
-// Mostrar listado de usuarios
+//  "email":"rafa.gamero@gmail.com",
+//  "password":"RafaGamero"
 
+//  "email":"alba.panato@gmail.com",
+//  "password":"AlbaPanato"
+
+//  "email":"maria.sarmiento@gmail.com",
+//  "password":"MariaSarmiento"
+
+//  "email":"lola.mento@gmail.com",
+//  "password":"LolaMento"
+
+//   "email":"aitor.menta@gmail.com",
+//  "password":"AitorMenta"
+
+//  "email":"paco.mermela@gmail.com",
+//  "password":"PacoMermela"
+
+//  "email":"Jony.mentero@gmail.com",
+// "password":"JonyMentero"
+
+//  "email":"kes.crotolamo@gmail.com",
+//  "password":"KesCrotolamo"
+
+// "email":"ana.cardo@gmail.com",
+//  "password":"AnaCardo"
+
+// "email":"luz.cuesta@gmail.com",
+// "password":"LuzCuesta"
+
+// "email":"marco.puerta@gmail.com",
+// "password":"MarcoPuerta"
+
+
+
+// ------- RUTAS EXTRAS-----------//
+
+//SOLO PARA REGISTRADOS CON ROL "ADMIN"
+
+//RECOGE TODA LA INFORMACION DE LOS RESTAURANTES, CON LA RELACION DE LOS USUARIOS REGISTRADOS
 ###
-GET http://localhost:3333/api/admin
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyOTU3OCwiY3JlYXRlZEF0IjoxNzIwMDI3Nzc4LCJpYXQiOjE3MjAwMjc3Nzl9.b18QESo3T46E5C5QxSTpTMuTU6GImHVqaLMSKdvnG0Q
+GET http://localhost:3333/api/restaurantes/admin
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyMDIxMjQzMywiY3JlYXRlZEF0IjoxNzIwMjA4ODMzLCJpYXQiOjE3MjAyMDg4MzN9.kWZwsm5XcQLJnX6gjAzl2YVp35s9aOK9g7NNzEWd1pQ
 
-
-
-// Crear un nuevo usuario 
-
-### 
-POST http://localhost:3333/api/admin
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyOTU3OCwiY3JlYXRlZEF0IjoxNzIwMDI3Nzc4LCJpYXQiOjE3MjAwMjc3Nzl9.b18QESo3T46E5C5QxSTpTMuTU6GImHVqaLMSKdvnG0Q
-Content-Type: application/json
-
-{
-   "nombre": "Kes Crotolamo",
-    "email": "kes.crotolamo@gmail.com",
-    "password": "KesCrotolamo",
-    "acceso": false
-}
-
-// Modificar un usuario que ya existe
-
+// RECOGE TODA LA INFORMACION DE LOS USUARIOS REGISTRADOS
 ###
-PUT http://localhost:3333/api/admin/3
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyOTU3OCwiY3JlYXRlZEF0IjoxNzIwMDI3Nzc4LCJpYXQiOjE3MjAwMjc3Nzl9.b18QESo3T46E5C5QxSTpTMuTU6GImHVqaLMSKdvnG0Q
+GET http://localhost:3333/api/usuarios/admin
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyMDIxMjQzMywiY3JlYXRlZEF0IjoxNzIwMjA4ODMzLCJpYXQiOjE3MjAyMDg4MzN9.kWZwsm5XcQLJnX6gjAzl2YVp35s9aOK9g7NNzEWd1pQ
+
+// ELIMINAR USUARIOS ,SOLO PERMITIDO ROL ADMIN
+###
+DELETE http://localhost:3333/api/usuarios/delete/13
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyMDIxNjA1NiwiY3JlYXRlZEF0IjoxNzIwMjEyNDU2LCJpYXQiOjE3MjAyMTI0NTZ9.PYZDxcvtjveuLJWiGCsk34Fp-bWSzDDNG_oFKCNP-H0
+
+// USUARIOS PUEDEN CAMBIAR SUS DATOS, NO NECESITAN EL ID, LO COGE DEL TOKEN LA PETICION
+###
+PUT http://localhost:3333/api/usuarios
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyMDIxNjA1NiwiY3JlYXRlZEF0IjoxNzIwMjEyNDU2LCJpYXQiOjE3MjAyMTI0NTZ9.PYZDxcvtjveuLJWiGCsk34Fp-bWSzDDNG_oFKCNP-H0
 Content-Type: application/json
 
 {
 "nombre": "Alba Panato",
-    "email": "alba.panato@gmail.com",
-"password": "MariaSarmiento",
-"acceso": false
- 
-}
-
-// Eliminar un usuario
-
-###
-DELETE http://localhost:3333/api/admin/
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyNjUxOCwiY3JlYXRlZEF0IjoxNzIwMDI0NzE4LCJpYXQiOjE3MjAwMjQ3MTh9.A9vshmbDahH5ftH_PJcpFIZKGKikL_KZCu-oPl4B0W4
-
-
-
-// RESTAURANTES
-
-
-### 
-POST http://localhost:3333/api/restaurantes
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJBY2Nlc3MiOmZhbHNlLCJleHBpcmVkQXQiOjE3MjAwMjU5MzIsImNyZWF0ZWRBdCI6MTcyMDAyNDEzMiwiaWF0IjoxNzIwMDI0MTMyfQ.9eOXqQsAgbvhRZPmeaz5GGh3FiNvgwXw5NE7XgIrw6A
-Content-Type: application/json
-
-{
-    "id_usuario": "3",
-    "nombre":"Casa Manolo",
-    "direccion": "Calle Mayor 3"
-}
-
-// POR AGREGAR NECESIDAD DEL TOKEN
-###
-PUT http://localhost:3333/api/restaurantes/2
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJBY2Nlc3MiOnRydWUsImV4cGlyZWRBdCI6MTcyMDAyNDc2OCwiY3JlYXRlZEF0IjoxNzIwMDIyOTY4LCJpYXQiOjE3MjAwMjI5Njh9.2JsBtNc4nndPNKPvTft4HLRGD432F6bx7P8xQMCTauw
-Content-Type: application/json
-
-{
-    "nombre":"En ca la abu",
-    "direccion": "Calle Ayun 59"
+"email": "alba.panato@gmail.com",
+"password": "AlbaPanato"
 }
 
 
-// TABLA RELACION COMENTARIOS POR HACER
-###
-PUT http://localhost:3333/api/restaurantes/2
-Authorization: 
-Content-Type: application/json
 
-{
-   comentario y de mas
-}
+// --- TABLA DE COMENTARIOS ---//
 
-// TABLA RELACION COMENTARIOS POR HACER
-POST http://localhost:3333/api/restaurantes/2
-Content-Type: application/json
+// POR REVISAR, TIRA ERROR-VER ARCHIVO restaurantes.js
 
-{
-    comentario y de mas
-}
 
-// POR AGREGAR NECESIDAD DEL TOKEN
-###
-DELETE http://localhost:3333/api/restaurantes/4
-Authorization: 
+# ###
+# POST http://localhost:3333/api/restaurantes/comentario
+# Content-Type: application/json
+
+# {
+#    "nombre": "Alfredo Segura",
+#    "id_restaurante": " 4",
+#    "restaurante": "Rincon del comer",
+#    "puntuacion": "4",
+#    "comentario": "¡Una experiencia increíble! El Rincon del comer ofrece auténtica comida casera que realmente te transporta a casa. Cada plato estaba lleno de sabores caseros y amorosamente preparados. Recomiendo especialmente el estofado de ternera, que era tierno y lleno de sabor. El ambiente era acogedor y el servicio fue excepcionalmente amable. Sin duda volveré para disfrutar de más delicias caseras. ¡Gracias por una comida tan memorable!"
+
+# }
 
