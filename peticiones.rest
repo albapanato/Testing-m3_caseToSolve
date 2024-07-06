@@ -130,17 +130,37 @@ Content-Type: application/json
 
 // POR REVISAR, TIRA ERROR-VER ARCHIVO restaurantes.js
 
+###
+GET http://localhost:3333/api/restaurantes/comentarios
+
+
+###
+POST http://localhost:3333/api/restaurantes/comentario
+Content-Type: application/json
+
+{
+   "nombre": "Gonzalo Molina",
+   "id_restaurante": " 7",
+   "restaurante": "Patatin Patatan",
+   "puntuacion": "5",
+   "comentario": "Lo recomendamos si buscas un sitio de ultima hora, con servicio rapido, calidad precio a la par, y te gustan las salsas. A mi pareja y a mi nos fascino. Un servicio inmejorable!"
+
+}
+
+
+//--- POR REVIDAR
 
 # ###
-# POST http://localhost:3333/api/restaurantes/comentario
+# PUT http://localhost:3333/api/restaurantes/comentario
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21lbnRJZCI6MiwiaWF0IjoxNzIwMzA0NDYxfQ.aduJr_vhrldjxCK4UUxTtKKHbPPrQkv6-GN4PeCoazQ
 # Content-Type: application/json
 
 # {
 #    "nombre": "Alfredo Segura",
 #    "id_restaurante": " 4",
-#    "restaurante": "Rincon del comer",
+#    "restaurante": "Rincon del comeeer",
 #    "puntuacion": "4",
-#    "comentario": "¡Una experiencia increíble! El Rincon del comer ofrece auténtica comida casera que realmente te transporta a casa. Cada plato estaba lleno de sabores caseros y amorosamente preparados. Recomiendo especialmente el estofado de ternera, que era tierno y lleno de sabor. El ambiente era acogedor y el servicio fue excepcionalmente amable. Sin duda volveré para disfrutar de más delicias caseras. ¡Gracias por una comida tan memorable!"
+#    "comentario": "¡Una experiencia increíble! El Rincon del comer ofrece auténtica comida casera que realmente te transporta a casa.¡Gracias por una comida tan memorable y casera, volveremos!"
 
 # }
 

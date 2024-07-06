@@ -249,3 +249,541 @@
  1720028612 | Jony.mentero@gmail.com | POST | / | 200 | No error
 
  1720028637 | kes.crotolamo@gmail.com | POST | / | 200 | No error
+
+ 1720082005 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720082020 | undefined | GET | / | 200 | No error
+
+ 1720082088 | lola.mento@gmail.com | PUT | /3 | 200 | No error
+
+ 1720082100 | undefined | GET | / | 200 | No error
+
+ 1720082187 | lola.mento@gmail.com | PUT | /4 | 200 | No error
+
+ 1720082322 | lola.mento@gmail.com | PUT | /4 | 200 | No error
+
+ 1720082329 | undefined | GET | / | 200 | No error
+
+ 1720082338 | lola.mento@gmail.com | PUT | /4 | 200 | No error
+
+ 1720082341 | undefined | GET | / | 200 | No error
+
+ 1720091806 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720091817 | undefined | GET | / | 200 | No error
+
+ 1720091889 | kes.crotolamo@gmail.com | POST | / | 200 | No error
+
+ 1720091902 | undefined | DELETE | /9 | 200 | No error
+
+ 1720091921 | undefined | POST | / | 200 | No error
+
+ 1720091942 | undefined | PUT | /2 | 200 | No error
+
+ 1720091971 | undefined | DELETE | /4 | 200 | No error
+
+ 1720091981 | undefined | DELETE | /3 | 200 | No error
+
+ 1720091985 | undefined | DELETE | /3 | 200 | No error
+
+ 1720092494 | undefined | DELETE | /admin | 200 | No error
+
+ 1720092567 | undefined | DELETE | /restaurantes/admin | 200 | No error
+
+ 1720092609 | undefined | GET | /admin | 200 | No error
+
+ 1720092617 | undefined | GET | /admin | 200 | No error
+
+ 1720092659 | undefined | GET | / | 200 | No error
+
+ 1720092870 | undefined | GET | /admin | 200 | No error
+
+ 1720092943 | kes.crotolamo@gmail.com | POST | /admin | 200 | No error
+
+ 1720092946 | undefined | GET | /admin | 200 | No error
+
+ 1720093304 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720093327 | ana.cardo@gmail.com | PUT | /admin/10 | 200 | No error
+
+ 1720093327 | ana.cardo@gmail.com | PUT | /admin/10 | 200 | No error
+
+ 1720093376 | undefined | GET | /admin | 200 | No error
+
+ 1720093376 | undefined | GET | /admin | 200 | No error
+
+ 1720093388 | ana.cardo@gmail.com | PUT | /admin/10 | 200 | No error
+
+ 1720093388 | ana.cardo@gmail.com | PUT | /admin/10 | 200 | No error
+
+ 1720093409 | undefined | DELETE | /admin/11 | 200 | No error
+
+ 1720093409 | undefined | DELETE | /admin/11 | 200 | No error
+
+ 1720093436 | undefined | DELETE | /admin/11 | 200 | No error
+
+ 1720093436 | undefined | DELETE | /admin/11 | 200 | No error
+
+ 1720093480 | undefined | DELETE | /restaurantes/1 | 200 | No error
+
+ 1720093480 | undefined | DELETE | /restaurantes/1 | 200 | No error
+
+ 1720093503 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720093503 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720093513 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720093513 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720093549 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720093549 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720093583 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720093583 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720094243 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720094246 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720094256 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720094256 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720094979 | undefined | GET | / | 200 | No error
+
+ 1720095025 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720095025 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720095030 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720095030 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720095299 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720095299 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720095306 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720095313 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720095326 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720095326 | undefined | DELETE | /restaurante/1 | 200 | No error
+
+ 1720095329 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720095329 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720095556 | undefined | GET | /admin | 200 | No error
+
+ 1720095564 | undefined | GET | /admin | 200 | No error
+
+ 1720095564 | undefined | GET | /admin | 200 | No error
+
+ 1720096795 | undefined | POST | / | 200 | No error
+
+ 1720096848 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720096852 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720096865 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720096865 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720096901 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720096901 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720097018 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720097018 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720097106 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720097106 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720097115 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720097126 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720097126 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720099227 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099230 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720099251 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099251 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099360 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099361 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099453 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099453 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099464 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099464 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099799 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099799 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099814 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099814 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099861 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720099861 | undefined | POST | /restauranteNuevo | 200 | No error
+
+ 1720100034 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720100038 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720100051 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720100051 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720100195 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720100198 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720100209 | undefined | PUT | /2 | 200 | No error
+
+ 1720100226 | undefined | PUT | /2 | 200 | No error
+
+ 1720100232 | undefined | PUT | /2 | 200 | No error
+
+ 1720100251 | undefined | PUT | /restaurante/2 | 200 | No error
+
+ 1720100286 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720100288 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720100612 | undefined | GET | /admin | 200 | No error
+
+ 1720100620 | undefined | GET | /admin | 200 | No error
+
+ 1720100674 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720100697 | undefined | GET | /admin | 200 | No error
+
+ 1720109389 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720109431 | undefined | GET | /admin | 200 | No error
+
+ 1720109456 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720109559 | lola.mento@gmail.com | POST | /login | 200 | No error
+
+ 1720109575 | undefined | GET | /admin | 200 | No error
+
+ 1720109880 | ana.cardo@gmail.com | PUT | /admin/4 | 200 | No error
+
+ 1720109883 | undefined | GET | /admin | 200 | No error
+
+ 1720109972 | ana.cardo@gmail.com | PUT | /admin/4 | 200 | No error
+
+ 1720109976 | undefined | GET | /admin | 200 | No error
+
+ 1720109997 | undefined | GET | /admin | 200 | No error
+
+ 1720110061 | lola.mento@gmail.com | PUT | /admin/4 | 200 | No error
+
+ 1720110073 | undefined | GET | /admin | 200 | No error
+
+ 1720110080 | ana.cardo@gmail.com | PUT | /admin/10 | 200 | No error
+
+ 1720110085 | undefined | GET | /admin | 200 | No error
+
+ 1720110142 | lola.mento@gmail.com | POST | /login | 200 | No error
+
+ 1720110205 | lola.mento@gmail.com | POST | /login | 200 | No error
+
+ 1720110252 | lola.mento@gmail.com | POST | /login | 200 | No error
+
+ 1720110470 | undefined | PUT | /4 | 200 | No error
+
+ 1720110804 | undefined | PUT | /propietarios/4 | 200 | No error
+
+ 1720112597 | lola.mento@gmail.com | POST | /login | 200 | No error
+
+ 1720112626 | undefined | PUT | /4 | 200 | No error
+
+ 1720112697 | undefined | PUT | /put/4 | 200 | No error
+
+ 1720112859 | undefined | PUT | /4 | 200 | No error
+
+ 1720112861 | undefined | PUT | /4 | 200 | No error
+
+ 1720112878 | undefined | PUT | /4 | 200 | No error
+
+ 1720112904 | undefined | PUT | / | 200 | No error
+
+ 1720112948 | undefined | PUT | /4 | 200 | No error
+
+ 1720112959 | undefined | PUT | /4 | 200 | No error
+
+ 1720113099 | undefined | PUT | /4 | 200 | No error
+
+ 1720113166 | undefined | PUT | /4 | 200 | No error
+
+ 1720113188 | undefined | PUT | /4 | 200 | No error
+
+ 1720113211 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720113222 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720113263 | undefined | PUT | /4 | 200 | No error
+
+ 1720113336 | undefined | PUT | /4 | 200 | No error
+
+ 1720113345 | undefined | PUT | /4 | 200 | No error
+
+ 1720113357 | undefined | PUT | /4 | 200 | No error
+
+ 1720113370 | undefined | PUT | /4 | 200 | No error
+
+ 1720113441 | undefined | GET | /restaurantes | 200 | No error
+
+ 1720113450 | undefined | PUT | /4 | 200 | No error
+
+ 1720113547 | undefined | PUT | /4 | 200 | No error
+
+ 1720113606 | undefined | PUT | /4 | 200 | No error
+
+ 1720113731 | undefined | PUT | /4 | 200 | No error
+
+ 1720113765 | undefined | PUT | /4 | 200 | No error
+
+ 1720113766 | undefined | PUT | /4 | 200 | No error
+
+ 1720113786 | undefined | PUT | /4 | 200 | No error
+
+ 1720113895 | undefined | PUT | /4 | 200 | No error
+
+ 1720114102 | undefined | PUT | /4 | 200 | No error
+
+ 1720114158 | undefined | PUT | /4 | 200 | No error
+
+ 1720114167 | lola.mento@gmail.com | POST | /login | 200 | No error
+
+ 1720114193 | undefined | PUT | /4 | 200 | No error
+
+ 1720114240 | undefined | PUT | /4 | 200 | No error
+
+ 1720114258 | undefined | PUT | /4 | 200 | No error
+
+ 1720114656 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720115463 | lola.mento@gmail.com | POST | /login | 200 | No error
+
+ 1720115504 | undefined | PUT | /4 | 200 | No error
+
+ 1720116096 | alba.panato@gmail.com | POST | /login | 200 | No error
+
+ 1720116124 | undefined | POST | / | 200 | No error
+
+ 1720116150 | undefined | POST | / | 200 | No error
+
+ 1720116163 | undefined | POST | / | 200 | No error
+
+ 1720116264 | undefined | POST | / | 200 | No error
+
+ 1720116320 | undefined | POST | / | 200 | No error
+
+ 1720116428 | undefined | POST | / | 200 | No error
+
+ 1720116435 | undefined | POST | / | 200 | No error
+
+ 1720116622 | undefined | POST | / | 200 | No error
+
+ 1720116703 | undefined | POST | / | 200 | No error
+2024-07-05T15:51:22+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T15:52:16+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T15:53:30+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T15:56:03+02:00 | N/A | POST | /nuevo | 403 | Forbidden
+2024-07-05T15:56:07+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T15:56:29+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T15:56:51+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T15:57:13+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T15:58:43+02:00 | N/A | PUT | /4 | 200 | OK
+2024-07-05T15:59:53+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T16:01:48+02:00 | N/A | GET | /inventario | 403 | Forbidden
+2024-07-05T16:01:54+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T16:02:09+02:00 | N/A | GET | /inventario | 200 | OK
+2024-07-05T16:07:31+02:00 | ana.cardo@gmail.com | POST | / | 200 | OK
+2024-07-05T16:11:42+02:00 | N/A | GET | /admin | 403 | Forbidden
+2024-07-05T16:11:49+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T16:12:16+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-05T16:16:56+02:00 | luz.cuesta@gmail.com | PUT | /api/usuarios/11 | 404 | Not Found
+2024-07-05T16:19:08+02:00 | luz.cuesta@gmail.com | PUT | /api/usuarios/11 | 404 | Not Found
+2024-07-05T16:21:30+02:00 | luz.cuesta@gmail.com | PUT | /api/usuarios/11 | 404 | Not Found
+2024-07-05T16:22:02+02:00 | luz.cuesta@gmail.com | PUT | /11 | 403 | Forbidden
+2024-07-05T16:22:10+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T16:22:42+02:00 | luz.cuesta@gmail.com | PUT | /11 | 200 | OK
+2024-07-05T16:23:13+02:00 | luz.cuesta@gmail.com | PUT | /11 | 200 | OK
+2024-07-05T16:23:19+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-05T16:24:41+02:00 | luz.cuesta@gmail.com | PUT | /11 | 200 | OK
+2024-07-05T16:25:14+02:00 | luz.cuesta@gmail.com | PUT | /11 | 200 | OK
+2024-07-05T16:25:22+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-05T16:27:10+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T16:34:14+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T16:35:24+02:00 | luz.cuesta@gmail.com | PUT | /11 | 200 | OK
+2024-07-05T16:36:43+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-05T16:40:16+02:00 | marco.puerta@gmail.com | POST | / | 200 | OK
+2024-07-05T16:48:55+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T16:56:01+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T16:58:56+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T16:59:27+02:00 | luz.cuesta@gmail.com | PUT | /api/usuarios | 404 | Not Found
+2024-07-05T16:59:50+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:00:02+02:00 | luz.cuesta@gmail.com | PUT | /4 | 200 | OK
+2024-07-05T17:00:19+02:00 | N/A | GET | /admin | 403 | Forbidden
+2024-07-05T17:00:31+02:00 | N/A | GET | /admin | 403 | Forbidden
+2024-07-05T17:00:34+02:00 | N/A | GET | /admin | 403 | Forbidden
+2024-07-05T17:10:50+02:00 | N/A | GET | /inventario | 403 | Forbidden
+2024-07-05T17:11:11+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:11:42+02:00 | N/A | GET | /inventario | 200 | OK
+2024-07-05T17:18:07+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T17:20:43+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T17:20:52+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T17:20:53+02:00 | N/A | GET | / | 304 | Not Modified
+2024-07-05T17:20:53+02:00 | N/A | GET | / | 304 | Not Modified
+2024-07-05T17:20:53+02:00 | N/A | GET | / | 304 | Not Modified
+2024-07-05T17:22:14+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T17:22:16+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T17:26:12+02:00 | N/A | GET | /admin | 403 | Forbidden
+2024-07-05T17:26:20+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:31:55+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T17:33:14+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T17:33:22+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T17:41:15+02:00 | marco.puerta@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:44:53+02:00 | maria.sarmiento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:45:01+02:00 | maria.sarmiento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:45:25+02:00 | maria.sarmiento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:45:51+02:00 | maria.sarmiento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:46:31+02:00 | maria.sarmiento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:46:32+02:00 | maria.sarmiento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:47:43+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:48:00+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:48:53+02:00 | aitor.menta@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:49:42+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T17:50:34+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T17:51:54+02:00 | paco.mermela@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:52:14+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T17:53:31+02:00 | paco.mermela@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:54:07+02:00 | Jony.mentero@gmail.com | POST | /login | 200 | OK
+2024-07-05T17:55:48+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T18:38:08+02:00 | Jony.mentero@gmail.com | POST | /login | 200 | OK
+2024-07-05T18:43:24+02:00 | N/A | PUT | /7 | 403 | Forbidden
+2024-07-05T18:43:59+02:00 | N/A | PUT | /7 | 403 | Forbidden
+2024-07-05T18:44:36+02:00 | N/A | PUT | /7 | 403 | Forbidden
+2024-07-05T18:45:49+02:00 | N/A | PUT | /7 | 403 | Forbidden
+2024-07-05T18:46:29+02:00 | Jony.mentero@gmail.com | POST | /login | 200 | OK
+2024-07-05T18:46:44+02:00 | N/A | PUT | /7 | 403 | Forbidden
+2024-07-05T18:47:33+02:00 | N/A | PUT | /7 | 403 | Forbidden
+2024-07-05T18:47:35+02:00 | N/A | PUT | /7 | 403 | Forbidden
+2024-07-05T18:49:02+02:00 | N/A | PUT | / | 403 | Forbidden
+2024-07-05T18:49:03+02:00 | N/A | PUT | / | 403 | Forbidden
+2024-07-05T18:49:05+02:00 | N/A | PUT | / | 403 | Forbidden
+2024-07-05T18:58:22+02:00 | ana.cardo@gmail.com | POST | /login | 200 | OK
+2024-07-05T18:59:45+02:00 | N/A | POST | /nuevo | 200 | OK
+2024-07-05T19:06:17+02:00 | N/A | PUT | /api/restaurantes | 500 | Internal Server Error
+2024-07-05T19:08:19+02:00 | N/A | PUT | /api/restaurantes | 500 | Internal Server Error
+2024-07-05T19:09:50+02:00 | N/A | PUT | /api/restaurantes | 500 | Internal Server Error
+2024-07-05T19:12:28+02:00 | N/A | PUT | /api/restaurantes | 500 | Internal Server Error
+2024-07-05T19:13:14+02:00 | N/A | PUT | /api/restaurantes | 500 | Internal Server Error
+2024-07-05T19:18:18+02:00 | N/A | PUT | /api/restaurantes | 500 | Internal Server Error
+2024-07-05T19:24:47+02:00 | N/A | PUT | /api/restaurantes | 500 | Internal Server Error
+2024-07-05T19:24:58+02:00 | N/A | PUT | /api/restaurantes | 500 | Internal Server Error
+2024-07-05T19:25:47+02:00 | N/A | PUT | / | 200 | OK
+2024-07-05T19:30:46+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T19:40:53+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T19:44:15+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:45:53+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:47:17+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:47:20+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:48:21+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:49:23+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:49:42+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:52:14+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:54:20+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:55:37+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:55:54+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T19:57:02+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T20:00:00+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T20:01:33+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T20:01:58+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T20:02:43+02:00 | dev.92@gmail.com | PUT | / | 200 | OK
+2024-07-05T20:04:29+02:00 | alba.panato@gmail.com | PUT | / | 200 | OK
+2024-07-05T20:13:36+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T20:14:08+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T20:35:59+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T20:36:43+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T20:37:34+02:00 | N/A | DELETE | /1 | 403 | Forbidden
+2024-07-05T20:37:51+02:00 | N/A | DELETE | /api/restaurantes/1 | 500 | Internal Server Error
+2024-07-05T20:38:44+02:00 | N/A | DELETE | /1 | 200 | OK
+2024-07-05T20:38:51+02:00 | N/A | GET | / | 200 | OK
+2024-07-05T20:39:18+02:00 | lola.mento@gmail.com | POST | /login | 200 | OK
+2024-07-05T20:39:36+02:00 | N/A | DELETE | /1 | 403 | Forbidden
+2024-07-05T21:45:45+02:00 | N/A | GET | /api/restaurantes/inventario | 404 | Not Found
+2024-07-05T21:45:53+02:00 | N/A | GET | /admin | 403 | Forbidden
+2024-07-05T21:47:13+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T21:48:17+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-05T21:54:40+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-05T21:54:52+02:00 | N/A | GET | /admin | 403 | Forbidden
+2024-07-05T22:44:05+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-05T22:44:08+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-05T22:44:10+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-05T22:45:04+02:00 | N/A | DELETE | /api/usuarios/delete/13 | 404 | Not Found
+2024-07-05T22:45:41+02:00 | N/A | DELETE | /delete/13 | 403 | Forbidden
+2024-07-05T22:47:36+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
+2024-07-05T22:48:11+02:00 | N/A | DELETE | /delete/13 | 200 | OK
+2024-07-05T22:51:15+02:00 | alba.panato@gmail.com | PUT | / | 200 | OK
+2024-07-05T22:51:54+02:00 | N/A | GET | /admin | 200 | OK
+2024-07-06T00:05:42+02:00 | N/A | GET | / | 200 | OK
+2024-07-06T00:10:51+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-06T00:22:29+02:00 | N/A | POST | /api/restaurantes/comentario | 500 | Internal Server Error
+2024-07-06T00:23:00+02:00 | N/A | POST | /api/restaurantes/comentario | 500 | Internal Server Error
+2024-07-06T00:24:07+02:00 | N/A | POST | /api/restaurantes/comentario | 500 | Internal Server Error
+2024-07-06T00:25:21+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-06T00:26:04+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-06T00:27:27+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-06T00:28:43+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-06T00:32:59+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-06T00:33:04+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-06T23:38:12+02:00 | N/A | GET | / | 200 | OK
+2024-07-06T23:39:19+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-06T23:40:32+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-06T23:40:53+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-07T00:15:03+02:00 | N/A | POST | /comentario | 500 | Internal Server Error
+2024-07-07T00:19:00+02:00 | N/A | POST | /comentario | 500 | Internal Server Error
+2024-07-07T00:19:29+02:00 | N/A | POST | /comentario | 500 | Internal Server Error
+2024-07-07T00:20:18+02:00 | N/A | POST | /comentario | 500 | Internal Server Error
+2024-07-07T00:21:01+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-07T00:41:44+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T00:42:33+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T00:43:22+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T00:48:28+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T00:54:32+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T00:54:39+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T00:55:55+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T00:55:57+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T00:59:20+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T00:59:21+02:00 | N/A | PUT | /comentario | 403 | Forbidden
+2024-07-07T01:01:28+02:00 | N/A | GET | / | 304 | Not Modified
+2024-07-07T01:01:30+02:00 | N/A | GET | / | 304 | Not Modified
+2024-07-07T01:04:09+02:00 | N/A | POST | /comentario | 500 | Internal Server Error
+2024-07-07T01:05:44+02:00 | N/A | POST | /comentario | 200 | OK
+2024-07-07T01:07:43+02:00 | N/A | GET | /api/restaurantes/comentarios | 404 | Not Found
+2024-07-07T01:07:57+02:00 | N/A | GET | /api/restaurantes/comentario | 404 | Not Found
+2024-07-07T01:18:51+02:00 | N/A | GET | /comentarios | 200 | OK
+2024-07-07T01:20:21+02:00 | alba.panato@gmail.com | POST | /login | 200 | OK
