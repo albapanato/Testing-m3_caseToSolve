@@ -114,9 +114,63 @@ const getUserRestaurantById = async (req, res, next) => {
     }
 }
 
+
+
 module.exports = {
     log,
     checkToken,
     verifyIsAdmin,
     getUserRestaurantById
 };
+
+
+// POR REVISAR SI DA TIEMPO
+
+// const verifyIdComment = async (req, res, next) => {
+//     if (!req.headers['authorization']) {
+//         return res.status(403).json({ error: 'Necesitas un codigo de autorizacion o tener acceso a este portal' })
+//     }
+//     const token = req.headers['authorization'];
+//     let payload;
+//     try {
+//         payload = jwt.verify(token, 'CODIGO DE AUTORIZACION');
+//         req.user = payload;
+//         if (payload.expiredAt < dayjs().unix()) {
+//             return res.status(403).json({ error: 'TU CODIGO HA CADUCADO, VUELVE A INICIALIZAR SESION' });
+//         }
+//         const messageModify = await modifyOpinion(req.user.id)
+//         res.user = messageModify;
+//         next();
+//     } catch (error) {
+//         return res.status(403).json({
+//             error: 'CODIGO INCORRECTO',
+//             msg: error.message
+//         })
+//     }
+
+// }
+
+
+// const verifyIdComment = async (req, res, next) => {
+//     try {
+//         if (!req.headers['authorization']) {
+//             return res.status(403).json({ error: 'Necesitas un código de autorización para acceder a este recurso' });
+//         }
+
+//         const token = req.headers['authorization'];
+//         const payload = jwt.verify(token, 'SECRET_KEY'); // Verifica y decodifica el token
+
+//         // Verifica la validez del token
+//         if (payload.expiredAt < dayjs().unix()) {
+//             return res.status(403).json({ error: 'El token ha caducado, por favor inicia sesión nuevamente' });
+//         }
+
+//         // Asigna el id del comentario desde el token al objeto req
+//         req.user = { comentId: payload.comentId };
+
+//         // Continúa con la ejecución del siguiente middleware o controlador
+//         next();
+//     } catch (error) {
+//         return res.status(403).json({ error: 'Token inválido', msg: error.message });
+//     }
+// };

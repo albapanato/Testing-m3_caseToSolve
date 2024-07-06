@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-
-const { checkToken, getUserRestaurantById, verifyIsAdmin } = require('../middleware')
+const jwt = require('jsonwebtoken');
+const { checkToken, getUserRestaurantById, verifyIsAdmin, verifyIdComment } = require('../middleware')
 const { body } = require('express-validator');
-const { updateInfoFromUser, getPublicInfo, newBusinesses, getAllBusinesses, deleteBusinesses, newOpinion, modifyOpinion } = require('../../models/model.restaurantes');
-
+const { updateInfoFromUser, getPublicInfo, newBusinesses, getAllBusinesses, deleteBusinesses, newOpinion, modifyOpinion, commets } = require('../../models/model.restaurantes');
+const dayjs = require('dayjs');
 // http://localhost:3333/api/restaurantes (Publica)
 router.get('/', (req, res) => {
     getPublicInfo()
@@ -89,54 +89,90 @@ router.get('/admin', verifyIsAdmin, (req, res) => {
         .catch(error => res.json({ error: error.message }))
 });
 
+// ----------------TABLA DE COMENTARIOS CON RELACION DE ID RESTAURANTES
 
-module.exports = router;
+// http://localhost:3333/api/restaurantes/comentarios
+router.get('/comentarios', (req, res) => {
+    commets()
+        .then(allComments => res.json(allComments))
+        .catch(error => res.json({ error: error.message }));
+});
 
+function createReference(comentId) {
+    const number = {
+        comentId: comentId,
+        expiredAt: dayjs().add(60, 'minutes').unix(),
+        createdAt: dayjs().unix(),
+    }
+    console.log('id comentario: ', comentId)
+    return jwt.sign(number, 'Numero de referencia del comentario');
 
+}
+
+// http://localhost:3333/api/restaurantes/comentario -- Tabla de valoraciones
+router.post('/comentario', async (req, res) => {
+    try {
+        const newComment = await newOpinion(req.body.nombre, req.body.id_restaurante, req.body.restaurante, req.body.puntuacion, req.body.comentario);
+        console.log(req.body)
+        if (newComment) {
+            console.log('pasa por aqui');
+            res.json({
+                Tu_comentario_se_ha_guardado_correctamente: 'Guarda el siguiente número de referencia por si deseas editar tu comentario',
+                Numero_de_referencia: createReference(newComment.insertId) // Aquí usamos insertId si estás usando MySQL.
+            });
+            console.log('pasa por aqui');
+        } else {
+            console.log('Tu opinion no se ha guardado');
+            res.status(500).json({ error: 'Tu opinion no se ha guardado' });
+        }
+    } catch (error) {
+        console.log('Error: ', error);
+        res.status(500).json({ error: error.message });
+    }
+});
 
 
 
 ///----------------------------------------
 
-//----- POR REVISAR,
-//       TIRA ERROR
-// {
-//     "error": "The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined"
-//   }
-// NO ESTA CREANDO EL TOKEN
-
-// http://localhost:3333/api/restaurantes/comentario
-
-// router.post('/comentario', (req, res) => {
-//     // const valoracion = {
-//     //     id: req.valoracion.id,
-//     //     nombre: req.body.nombre,
-//     //     id_restaurante: req.body.id_restaurante,
-//     //     restaurante: req.body.restaurante,
-//     //     puntuacion: req.body.puntuacion,
-//     //     comentario: req.body.valoracion
-//     // }
-//     // console.log(valoracion)
-//     console.log(req.body)
-//     newOpinion(req.body.nombre, req.body.id_restaurante, req.body.puntuacion, req.body.comentario)
-//         .then(opinion => {
-//             console.log('pasa por aqui')
-//             res.json({
-//                 Tu_comentario_se_ha_guardado_correctamente: ' Guarda el siguiente numero de referencia por si deseas editar tu comentario',
-//                 Numero_de_referencia: createReference(opinion[0])
-//             })
-//             console.log('pasa por aqui')
-//         }).catch(error => res.json({ error: error.message }))
-// })
+//----- POR REVISAR SI DA TIEMPO
 
 
+// router.put('/comentario', verifyIdComment, async (req, res) => {
+//     try {
+//         const { id, nombre, id_restaurante, restaurante, puntuacion, comentario } = req.body;
 
-// function createReference(coment) {
-//     const number = {
-//         comentId: coment.id,
+//         const result = await modifyOpinion(id);
+
+//         res.json({
+//             message: '¡Comentario actualizado correctamente!',
+//             updatedComment: result
+//         });
+//     } catch (error) {
+//         res.status(500).json({ error: error.message });
 //     }
-//     console.log(coment.id)
-//     return jwt.sign(payload, 'Numero de referencia del comentario');
+// });
 
-// }
+// router.put('/comentario', verifyIdComment,
+//     (req, res) => {
+//         const updatedComment = {
+//             nombre: req.body.nombre,
+//             id_restaurante: req.body.id_restaurante,
+//             restaurante: req.body.restaurante,
+//             comentario: req.body.comentario
+//         }
+//         // console.log('valor restaurante: ', restaurante.id_usuario)
+//         // console.log('valor restaurante: ', restaurante.nombre)
+//         // console.log('valor restaurante: ', restaurante.direccion)
+//         // console.log('valor restaurante: ', restaurante.tipo_comida)
+//         // console.log('valor restaurante.body', req.body)
+//         console.log(updatedComment.id)
+//         modifyOpinion(updatedComment.id)
+//             .then(result => res.json(result))
+//             .catch(error => res.json({ error: error.message }));
+//     }
+// )
 
+
+
+module.exports = router;
