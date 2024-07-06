@@ -82,16 +82,3 @@ exports.getById = (id) => {
     });
 }
 
-
-// exports.getAccess = (acceso) => {
-//     return new Promise((resolve, reject) => {
-//         db.query(
-//             'SELECT acceso FROM usuarios',
-//             [acceso],
-//             (err, rows) => {
-//                 if (err) return reject(err);
-//                 resolve(rows);
-//             }
-//         )
-//     })
-// }

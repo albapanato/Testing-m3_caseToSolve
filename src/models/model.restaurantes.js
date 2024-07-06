@@ -75,8 +75,7 @@ exports.getAllBusinesses = () => {
     });
 };
 
-//------------------------------POR REVISAR Y POR TERMINAR
-
+// http://localhost:3333/api/restaurantes/comentarios
 exports.commets = () => {
     return new Promise((resolve, reject) => {
         db.query(
@@ -89,7 +88,7 @@ exports.commets = () => {
 
 };
 
-
+// http://localhost:3333/api/restaurantes/comentario
 exports.newOpinion = (nombre, id_restaurante, restaurante, puntuacion, comentario) => {
     return new Promise((resolve, reject) => {
         db.query(
@@ -105,45 +104,33 @@ exports.newOpinion = (nombre, id_restaurante, restaurante, puntuacion, comentari
 };
 
 
+
 //POR REVISAR
 
 // exports.modifyOpinion = (id) => {
 //     return new Promise((resolve, reject) => {
 //         db.query(
-//             `UPDATE valoraciones SET nombre = ?, restaurante = ?, puntuacion = ?, comentario = ? WHERE id = ?`,
-//             [nombre, restaurante, puntuacion, comentario, id],
-//             (err, rows) => {
+//             `UPDATE valoraciones SET nombre = ?, id_restaurante = ?, restaurante = ?, puntuacion = ?, comentario = ? WHERE id = ?`,
+//             [nombre, id_restaurante, restaurante, puntuacion, comentario, id],
+//             (err, result) => {
 //                 if (err) return reject(err);
-//                 resolve(rows);
+//                 resolve(result);
+//             }
+//         );
+//     });
+// };
 
-//             })
-//     })
-
-// }
 
 
-exports.modifyOpinion = (id) => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            `UPDATE valoraciones SET nombre = ?, id_restaurante = ?, restaurante = ?, puntuacion = ?, comentario = ? WHERE id = ?`,
-            [nombre, id_restaurante, restaurante, puntuacion, comentario, id],
-            (err, result) => {
-                if (err) return reject(err);
-                resolve(result);
-            }
-        );
-    });
-};
-
-exports.findOpinionRestaurant = (id) => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            'SELECT * FROM valoraciones WHERE id_restaurante = ?',
-            [id_restaurante],
-            (err, result) => {
-                if (err) return reject(err);
-                resolve(result[0])
-            }
-        )
-    });
-};
+// exports.findOpinionRestaurant = (id) => {
+//     return new Promise((resolve, reject) => {
+//         db.query(
+//             'SELECT * FROM valoraciones WHERE id_restaurante = ?',
+//             [id_restaurante],
+//             (err, result) => {
+//                 if (err) return reject(err);
+//                 resolve(result[0])
+//             }
+//         )
+//     });
+// };
