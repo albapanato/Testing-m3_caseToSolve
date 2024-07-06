@@ -128,8 +128,6 @@ Content-Type: application/json
 
 // --- TABLA DE COMENTARIOS ---//
 
-// POR REVISAR, TIRA ERROR-VER ARCHIVO restaurantes.js
-
 ###
 GET http://localhost:3333/api/restaurantes/comentarios
 
@@ -148,7 +146,7 @@ Content-Type: application/json
 }
 
 
-//--- POR REVIDAR
+//--- POR REVIDAR --- TIRA ERROR-VER ARCHIVO restaurantes.js
 
 # ###
 # PUT http://localhost:3333/api/restaurantes/comentario
