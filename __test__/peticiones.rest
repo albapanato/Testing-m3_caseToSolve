@@ -1,0 +1,163 @@
+// GET /restaurantes (Pública)
+###
+GET http://localhost:3333/api/restaurantes
+
+
+// POST /restaurantes/ (Privada)
+###
+POST http://localhost:3333/api/restaurantes/nuevo
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJ1c2VyQWNjZXNzIjp0cnVlLCJleHBpcmVkQXQiOjE3MjAyMDIzMDIsImNyZWF0ZWRBdCI6MTcyMDE5ODcwMiwiaWF0IjoxNzIwMTk4NzAyfQ.ahXiCW_T4YLKeDENpzu-mnexh5c7kOfc4nfFksk7-hc
+Content-Type: application/json
+
+{
+    "nombre":"La mar de buena",
+    "direccion": "Av Lungomare 134, Valencia ",
+    "tipo_comida": "Marisqueria"
+}
+
+// PUT /restaurantes/id (Privada)
+###
+PUT http://localhost:3333/api/restaurantes
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJ1c2VyQWNjZXNzIjp0cnVlLCJleHBpcmVkQXQiOjE3MjAyMDIzMDIsImNyZWF0ZWRBdCI6MTcyMDE5ODcwMiwiaWF0IjoxNzIwMTk4NzAyfQ.ahXiCW_T4YLKeDENpzu-mnexh5c7kOfc4nfFksk7-hc
+Content-Type: application/json
+
+{
+    
+    "nombre":"La mar de buena",
+    "direccion": "Av Lungomare 234, Valencia ",
+    "tipo_comida": "Marisqueria"
+}
+
+
+
+//DELETE /restaurantes/id; (Protegida)
+###
+DELETE http://localhost:3333/api/restaurantes/1
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJ1c2VyIiwiZXhwaXJlZEF0IjoxNzIwMjA4MzU4LCJjcmVhdGVkQXQiOjE3MjAyMDQ3NTgsImlhdCI6MTcyMDIwNDc1OH0.yILH5PF8v8HoEC9F4IsmTmGMMzcwCi6UCyL_l5qjC5A
+
+// POST /usuarios (Pública)
+###
+POST http://localhost:3333/api/usuarios
+Content-Type: application/json
+
+{
+    
+    "nombre": "Alba",
+    "email": "alba@gmail.com",
+    "password": "Alba1234",
+    "rol":"admin"
+}
+
+
+// POST /usuarios/login (Pública)
+###
+POST http://localhost:3333/api/usuarios/login
+Content-Type: application/json
+
+{
+    "email": "alba@gmail.com",
+    "password": "Alba1234"
+}
+
+//  "email":"rafa.gamero@gmail.com",
+//  "password":"RafaGamero"
+
+//  "email":"alba.panato@gmail.com",
+//  "password":"AlbaPanato"
+
+//  "email":"maria.sarmiento@gmail.com",
+//  "password":"MariaSarmiento"
+
+//  "email":"lola.mento@gmail.com",
+//  "password":"LolaMento"
+
+//   "email":"aitor.menta@gmail.com",
+//  "password":"AitorMenta"
+
+//  "email":"paco.mermela@gmail.com",
+//  "password":"PacoMermela"
+
+//  "email":"Jony.mentero@gmail.com",
+// "password":"JonyMentero"
+
+//  "email":"kes.crotolamo@gmail.com",
+//  "password":"KesCrotolamo"
+
+// "email":"ana.cardo@gmail.com",
+//  "password":"AnaCardo"
+
+// "email":"luz.cuesta@gmail.com",
+// "password":"LuzCuesta"
+
+// "email":"marco.puerta@gmail.com",
+// "password":"MarcoPuerta"
+
+
+
+// ------- RUTAS EXTRAS-----------//
+
+//SOLO PARA REGISTRADOS CON ROL "ADMIN"
+
+//RECOGE TODA LA INFORMACION DE LOS RESTAURANTES, CON LA RELACION DE LOS USUARIOS REGISTRADOS
+###
+GET http://localhost:3333/api/restaurantes/admin
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MDM0NywiY3JlYXRlZEF0IjoxNzI2NjY2NzQ3LCJpYXQiOjE3MjY2NjY3NDd9.fpnxbfvAoZh88fMmPj90p5ELMI2CVmYV2IxCqvrBk_0
+// RECOGE TODA LA INFORMACION DE LOS USUARIOS REGISTRADOS
+###
+GET http://localhost:3333/api/usuarios/admin
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MDM0NywiY3JlYXRlZEF0IjoxNzI2NjY2NzQ3LCJpYXQiOjE3MjY2NjY3NDd9.fpnxbfvAoZh88fMmPj90p5ELMI2CVmYV2IxCqvrBk_0
+// ELIMINAR USUARIOS ,SOLO PERMITIDO ROL ADMIN
+###
+DELETE http://localhost:3333/api/usuarios/delete/5
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MDM0NywiY3JlYXRlZEF0IjoxNzI2NjY2NzQ3LCJpYXQiOjE3MjY2NjY3NDd9.fpnxbfvAoZh88fMmPj90p5ELMI2CVmYV2IxCqvrBk_0
+// USUARIOS PUEDEN CAMBIAR SUS DATOS, NO NECESITAN EL ID, LO COGE DEL TOKEN LA PETICION
+###
+PUT http://localhost:3333/api/usuarios
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MDM0NywiY3JlYXRlZEF0IjoxNzI2NjY2NzQ3LCJpYXQiOjE3MjY2NjY3NDd9.fpnxbfvAoZh88fMmPj90p5ELMI2CVmYV2IxCqvrBk_0
+Content-Type: application/json
+
+{
+    "nombre": "Alba Panato Alegre",
+    "email": "alba@gmail.com",
+    "password": "Alba1234",
+    "rol":"admin"
+}
+
+
+
+// --- TABLA DE COMENTARIOS ---//
+
+###
+GET http://localhost:3333/api/restaurantes/comentarios
+
+
+###
+POST http://localhost:3333/api/restaurantes/comentario
+Content-Type: application/json
+
+{
+   "nombre": "Gonzalo Molina",
+   "id_restaurante": " 7",
+   "restaurante": "Patatin Patatan",
+   "puntuacion": "5",
+   "comentario": "Lo recomendamos si buscas un sitio de ultima hora, con servicio rapido, calidad precio a la par, y te gustan las salsas. A mi pareja y a mi nos fascino. Un servicio inmejorable!"
+
+}
+
+
+//--- POR REVIDAR --- TIRA ERROR-VER ARCHIVO restaurantes.js
+
+# ###
+# PUT http://localhost:3333/api/restaurantes/comentario
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21lbnRJZCI6MiwiaWF0IjoxNzIwMzA0NDYxfQ.aduJr_vhrldjxCK4UUxTtKKHbPPrQkv6-GN4PeCoazQ
+# Content-Type: application/json
+
+# {
+#    "nombre": "Alfredo Segura",
+#    "id_restaurante": " 4",
+#    "restaurante": "Rincon del comeeer",
+#    "puntuacion": "4",
+#    "comentario": "¡Una experiencia increíble! El Rincon del comer ofrece auténtica comida casera que realmente te transporta a casa.¡Gracias por una comida tan memorable y casera, volveremos!"
+
+# }
+
