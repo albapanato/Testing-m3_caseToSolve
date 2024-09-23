@@ -6,11 +6,11 @@ GET http://localhost:3333/api/restaurantes
 // POST /restaurantes/ (Privada)
 ###
 POST http://localhost:3333/api/restaurantes/nuevo
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJ1c2VyQWNjZXNzIjp0cnVlLCJleHBpcmVkQXQiOjE3MjAyMDIzMDIsImNyZWF0ZWRBdCI6MTcyMDE5ODcwMiwiaWF0IjoxNzIwMTk4NzAyfQ.ahXiCW_T4YLKeDENpzu-mnexh5c7kOfc4nfFksk7-hc
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MTU4MCwiY3JlYXRlZEF0IjoxNzI2NjY3OTgwLCJpYXQiOjE3MjY2Njc5ODB9.PTLXai7J2qsMDWjcQtYBOUvL66ySgbWwx6vj0HEi9-Q
 Content-Type: application/json
 
 {
-    "nombre":"La mar de buena",
+    "nombre":"La mar de buena ",
     "direccion": "Av Lungomare 134, Valencia ",
     "tipo_comida": "Marisqueria"
 }
@@ -18,7 +18,7 @@ Content-Type: application/json
 // PUT /restaurantes/id (Privada)
 ###
 PUT http://localhost:3333/api/restaurantes
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJ1c2VyQWNjZXNzIjp0cnVlLCJleHBpcmVkQXQiOjE3MjAyMDIzMDIsImNyZWF0ZWRBdCI6MTcyMDE5ODcwMiwiaWF0IjoxNzIwMTk4NzAyfQ.ahXiCW_T4YLKeDENpzu-mnexh5c7kOfc4nfFksk7-hc
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MTU4MCwiY3JlYXRlZEF0IjoxNzI2NjY3OTgwLCJpYXQiOjE3MjY2Njc5ODB9.PTLXai7J2qsMDWjcQtYBOUvL66ySgbWwx6vj0HEi9-Q
 Content-Type: application/json
 
 {
@@ -33,8 +33,7 @@ Content-Type: application/json
 //DELETE /restaurantes/id; (Protegida)
 ###
 DELETE http://localhost:3333/api/restaurantes/1
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJ1c2VyIiwiZXhwaXJlZEF0IjoxNzIwMjA4MzU4LCJjcmVhdGVkQXQiOjE3MjAyMDQ3NTgsImlhdCI6MTcyMDIwNDc1OH0.yILH5PF8v8HoEC9F4IsmTmGMMzcwCi6UCyL_l5qjC5A
-
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MTU4MCwiY3JlYXRlZEF0IjoxNzI2NjY3OTgwLCJpYXQiOjE3MjY2Njc5ODB9.PTLXai7J2qsMDWjcQtYBOUvL66ySgbWwx6vj0HEi9-Q
 // POST /usuarios (Pública)
 ###
 POST http://localhost:3333/api/usuarios
@@ -42,9 +41,10 @@ Content-Type: application/json
 
 {
     
-    "nombre": "Marco Puerta",
-    "email": "marco.puerta@gmail.com",
-    "password": "MarcoPuerta"
+    "nombre": "Alba",
+    "email": "alba@gmail.com",
+    "password": "Alba1234",
+    "rol":"admin"
 }
 
 
@@ -54,8 +54,8 @@ POST http://localhost:3333/api/usuarios/login
 Content-Type: application/json
 
 {
-   "email":"alba.panato@gmail.com",
-    "password":"AlbaPanato"
+    "email": "alba@gmail.com",
+    "password": "Alba1234"
 }
 
 //  "email":"rafa.gamero@gmail.com",
@@ -100,28 +100,26 @@ Content-Type: application/json
 //RECOGE TODA LA INFORMACION DE LOS RESTAURANTES, CON LA RELACION DE LOS USUARIOS REGISTRADOS
 ###
 GET http://localhost:3333/api/restaurantes/admin
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyMDIxMjQzMywiY3JlYXRlZEF0IjoxNzIwMjA4ODMzLCJpYXQiOjE3MjAyMDg4MzN9.kWZwsm5XcQLJnX6gjAzl2YVp35s9aOK9g7NNzEWd1pQ
-
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MTU4MCwiY3JlYXRlZEF0IjoxNzI2NjY3OTgwLCJpYXQiOjE3MjY2Njc5ODB9.PTLXai7J2qsMDWjcQtYBOUvL66ySgbWwx6vj0HEi9-Q
 // RECOGE TODA LA INFORMACION DE LOS USUARIOS REGISTRADOS
 ###
 GET http://localhost:3333/api/usuarios/admin
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyMDIxMjQzMywiY3JlYXRlZEF0IjoxNzIwMjA4ODMzLCJpYXQiOjE3MjAyMDg4MzN9.kWZwsm5XcQLJnX6gjAzl2YVp35s9aOK9g7NNzEWd1pQ
-
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MTU4MCwiY3JlYXRlZEF0IjoxNzI2NjY3OTgwLCJpYXQiOjE3MjY2Njc5ODB9.PTLXai7J2qsMDWjcQtYBOUvL66ySgbWwx6vj0HEi9-Q
 // ELIMINAR USUARIOS ,SOLO PERMITIDO ROL ADMIN
 ###
-DELETE http://localhost:3333/api/usuarios/delete/13
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyMDIxNjA1NiwiY3JlYXRlZEF0IjoxNzIwMjEyNDU2LCJpYXQiOjE3MjAyMTI0NTZ9.PYZDxcvtjveuLJWiGCsk34Fp-bWSzDDNG_oFKCNP-H0
-
+DELETE http://localhost:3333/api/usuarios/delete/5
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MTU4MCwiY3JlYXRlZEF0IjoxNzI2NjY3OTgwLCJpYXQiOjE3MjY2Njc5ODB9.PTLXai7J2qsMDWjcQtYBOUvL66ySgbWwx6vj0HEi9-Q
 // USUARIOS PUEDEN CAMBIAR SUS DATOS, NO NECESITAN EL ID, LO COGE DEL TOKEN LA PETICION
 ###
 PUT http://localhost:3333/api/usuarios
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyMDIxNjA1NiwiY3JlYXRlZEF0IjoxNzIwMjEyNDU2LCJpYXQiOjE3MjAyMTI0NTZ9.PYZDxcvtjveuLJWiGCsk34Fp-bWSzDDNG_oFKCNP-H0
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsInVzZXJBY2Nlc3MiOnRydWUsInVzZXJSb2wiOiJhZG1pbiIsImV4cGlyZWRBdCI6MTcyNjY3MDAwNSwiY3JlYXRlZEF0IjoxNzI2NjY2NDA1LCJpYXQiOjE3MjY2NjY0MDV9.opO_lHCobHdTwE3zBwTQktmMVuREdWITzNbtgnSsQag
 Content-Type: application/json
 
 {
-"nombre": "Alba Panato",
-"email": "alba.panato@gmail.com",
-"password": "AlbaPanato"
+    "nombre": "Alba Panato Alegre",
+    "email": "alba@gmail.com",
+    "password": "Alba1234",
+    "rol":"admin"
 }
 
 

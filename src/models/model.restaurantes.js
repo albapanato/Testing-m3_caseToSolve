@@ -1,109 +1,112 @@
-// GET /restaurantes 
+// GET /restaurantes
 exports.getPublicInfo = () => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            'SELECT id, nombre, direccion, tipo_comida FROM restaurantes', (err, rows) => {
-                if (err) return reject(err);
-                resolve(rows);
-            }
-        )
-    });
-
+  return new Promise((resolve, reject) => {
+    db.query(
+      "SELECT id, nombre, direccion, tipo_comida FROM restaurantes",
+      (err, rows) => {
+        if (err) return reject(err);
+        resolve(rows);
+      }
+    );
+  });
 };
 // POST /restaurantes
 exports.newBusinesses = ({ id_usuario, nombre, direccion, tipo_comida }) => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            'INSERT INTO restaurantes (id_usuario, nombre, direccion, tipo_comida) values (?, ?, ?, ?);',
-            [id_usuario, nombre, direccion, tipo_comida],
-            (err, result) => {
-                if (err) return reject(err);
-                resolve(result);
-            }
-        )
-    });
+  return new Promise((resolve, reject) => {
+    db.query(
+      "INSERT INTO restaurantes (id_usuario, nombre, direccion, tipo_comida) values (?, ?, ?, ?);",
+      [id_usuario, nombre, direccion, tipo_comida],
+      (err, result) => {
+        if (err) return reject(err);
+        resolve(result);
+      }
+    );
+  });
 };
 // PUT /restautantes
-exports.updateInfoFromUser = (id_usuario, { nombre, direccion, tipo_comida }) => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            'UPDATE restaurantes SET nombre = ? , direccion = ? , tipo_comida= ? WHERE id_usuario = ?',
-            [nombre, direccion, tipo_comida, id_usuario],
-            (err, result) => {
-                if (err) return reject(err);
-                resolve(result);
-            }
-        )
-    });
+exports.updateInfoFromBussiness = (
+  id_usuario,
+  { nombre, direccion, tipo_comida }
+) => {
+  return new Promise((resolve, reject) => {
+    db.query(
+      "UPDATE restaurantes SET nombre = ? , direccion = ? , tipo_comida= ? WHERE id_usuario = ?",
+      [nombre, direccion, tipo_comida, id_usuario],
+      (err, result) => {
+        if (err) return reject(err);
+        resolve(result);
+      }
+    );
+  });
 };
 //middleware: getUserRestaurantById
 exports.findRestaurant = (id_usuario) => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            'SELECT * FROM restaurantes WHERE id_usuario = ?',
-            [id_usuario],
-            (err, result) => {
-                if (err) return reject(err);
-                resolve(result[0])
-            }
-        )
-    });
+  return new Promise((resolve, reject) => {
+    db.query(
+      "SELECT * FROM restaurantes WHERE id_usuario = ?",
+      [id_usuario],
+      (err, result) => {
+        if (err) return reject(err);
+        resolve(result[0]);
+      }
+    );
+  });
 };
 
 // restaurantes/id
 exports.deleteBusinesses = (restauranteId) => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            'DELETE FROM restaurantes WHERE id = ?',
-            [restauranteId],
-            (err, result) => {
-                if (err) return reject(err);
-                resolve(result);
-            }
-        )
-    });
+  return new Promise((resolve, reject) => {
+    db.query(
+      "DELETE FROM restaurantes WHERE id = ?",
+      [restauranteId],
+      (err, result) => {
+        if (err) return reject(err);
+        resolve(result);
+      }
+    );
+  });
 };
 
 // /restaurantes/admin
 exports.getAllBusinesses = () => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            'SELECT * FROM restaurantes', (err, rows) => {
-                if (err) return reject(err);
-                resolve(rows);
-            })
+  return new Promise((resolve, reject) => {
+    db.query("SELECT * FROM restaurantes", (err, rows) => {
+      if (err) return reject(err);
+      resolve(rows);
     });
+  });
 };
 
 // http://localhost:3333/api/restaurantes/comentarios
 exports.commets = () => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            'SELECT * FROM valoraciones', (err, rows) => {
-                if (err) return reject(err);
-                resolve(rows);
-            }
-        )
+  return new Promise((resolve, reject) => {
+    db.query("SELECT * FROM valoraciones", (err, rows) => {
+      if (err) return reject(err);
+      resolve(rows);
     });
-
+  });
 };
 
 // http://localhost:3333/api/restaurantes/comentario
-exports.newOpinion = (nombre, id_restaurante, restaurante, puntuacion, comentario) => {
-    return new Promise((resolve, reject) => {
-        db.query(
-            `INSERT INTO valoraciones (nombre, id_restaurante, restaurante, puntuacion, comentario, fecha_creacion)
+exports.newOpinion = (
+  nombre,
+  id_restaurante,
+  restaurante,
+  puntuacion,
+  comentario
+) => {
+  return new Promise((resolve, reject) => {
+    db.query(
+      `INSERT INTO valoraciones (nombre, id_restaurante, restaurante, puntuacion, comentario, fecha_creacion)
             VALUES (?, ?, ?, ?, ?, NOW())`,
-            [nombre, id_restaurante, restaurante, puntuacion, comentario],
-            (err, result) => {
-                if (err) return reject(err);
-                resolve(result);
-            }
-        );
-    });
+      [nombre, id_restaurante, restaurante, puntuacion, comentario],
+      (err, result) => {
+        if (err) return reject(err);
+        resolve(result);
+      }
+    );
+  });
 };
-
-
 
 //POR REVISAR
 
@@ -119,8 +122,6 @@ exports.newOpinion = (nombre, id_restaurante, restaurante, puntuacion, comentari
 //         );
 //     });
 // };
-
-
 
 // exports.findOpinionRestaurant = (id) => {
 //     return new Promise((resolve, reject) => {

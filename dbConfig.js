@@ -1,16 +1,16 @@
-const mysql = require('mysql2')
+const mysql = require("mysql2");
 
 exports.connect = function (done) {
+  let pool = mysql.createPool({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: process.env.NODE_ENV === "test" ? "DB_TESTING" : "PROYECTO",
+    port: 3306,
+  });
+  console.log(
+    `BASE DE DATOS ${process.env.NODE_ENV === "test" ? "TESTING" : "PROYECTO"}`
+  );
 
-    let pool = mysql.createPool({
-        host: 'localhost',
-        user: 'root',
-        password: '1234',
-        database: 'm3_casetosolve',
-        port: 3306
-
-    })
-
-    global.db = pool;
-
-}
+  global.db = pool;
+};
