@@ -1,3 +1,4 @@
+//TEST DE INTEGRACION
 const request = require("supertest");
 const app = require("../../app.js");
 
@@ -23,6 +24,10 @@ describe("SUITE TEST", () => {
     it("It should return an status -- 403 FORBIDDEN -- METHOD: GET /api/usuarios/admin", async () => {
       const response = await request(app).get("/api/usuarios/admin");
       expect(response.statusCode).toBe(403);
+    });
+    it("It should return an status -- 404 not found -- METHOD: GET /api/usuarios/admin/384hrhudi", async () => {
+      const response = await request(app).get("/api/usuarios/admin/384hrhudi");
+      expect(response.statusCode).toBe(404);
     });
   });
 });
